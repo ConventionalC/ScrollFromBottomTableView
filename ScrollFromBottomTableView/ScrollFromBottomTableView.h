@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char ScrollFromBottomTableViewVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ScrollFromBottomTableView/PublicHeader.h>
 
-
+#import <ScrollFromBottomTableView/ScrollFromBottomTableViewController.h>
