@@ -2,6 +2,11 @@
 
 @implementation ForwardingUITableViewDelegate
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    return [self.delegate respondsToSelector:aSelector];
+}
+
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     if(self.delegate && [self.delegate respondsToSelector:

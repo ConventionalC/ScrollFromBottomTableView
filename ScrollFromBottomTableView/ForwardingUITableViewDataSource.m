@@ -2,6 +2,11 @@
 
 @implementation ForwardingUITableViewDataSource
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    return [self.dataSource respondsToSelector:aSelector];
+}
+
 - (void)forwardInvocation:(NSInvocation *)anInvocation
 {
     if(self.dataSource && [self.dataSource respondsToSelector:
