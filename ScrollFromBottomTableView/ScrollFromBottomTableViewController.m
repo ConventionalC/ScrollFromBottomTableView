@@ -1,6 +1,7 @@
 #import "ScrollFromBottomTableViewController.h"
 #import "ScrollFromBottomTableViewDataSource.h"
 #import "ScrollFromBottomTableViewDelegate.h"
+#import "UIView+ScrollFromBottomTableView.h"
 
 @implementation ScrollFromBottomTableViewController
 {
@@ -19,6 +20,32 @@
     forwardingDelegate = ScrollFromBottomTableViewDelegate.new;
     forwardingDelegate.delegate = self;
     self.tableView.delegate = forwardingDelegate;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    for(UIView *view in self.tableView.subviews)
+    {
+        if([view isKindOfClass:UITableViewHeaderFooterView.class])
+        {
+            UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView*)view;
+            [header.contentView flipView];
+        }
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    for(UIView *view in self.tableView.subviews)
+    {
+        if([view isKindOfClass:UITableViewHeaderFooterView.class])
+        {
+            UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView*)view;
+            [header.contentView flipView];
+        }
+    }
 }
 
 @end
