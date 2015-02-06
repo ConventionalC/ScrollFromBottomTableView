@@ -23,7 +23,7 @@
     {
         UITableViewHeaderFooterView *header = UITableViewHeaderFooterView.new;
         header.textLabel.text = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
-        [header flipView];
+        [header.contentView flipView];
         return header;
     }
     return nil;
@@ -40,7 +40,7 @@
     {
         UITableViewHeaderFooterView *footer = UITableViewHeaderFooterView.new;
         footer.textLabel.text = [tableView.dataSource tableView:tableView titleForFooterInSection:section];
-        [footer flipView];
+        [footer.contentView flipView];
         return footer;
     }
     return nil;

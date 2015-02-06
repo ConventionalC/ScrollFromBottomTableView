@@ -19,7 +19,7 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
-    [cell flipView];
+    [cell.contentView flipView];
     return cell;
 }
 
