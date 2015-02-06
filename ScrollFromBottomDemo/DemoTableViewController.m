@@ -2,6 +2,7 @@
 
 @implementation DemoTableViewController
 
+//todo: flip lines too
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

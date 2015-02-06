@@ -5,7 +5,8 @@
 
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
-    if([@[@"tableView:viewForHeaderInSection:", @"tableView:viewForFooterInSection:"] containsObject:NSStringFromSelector(aSelector)])
+    
+    if([@[@"tableView:viewForHeaderInSection:", @"tableView:heightForHeaderInSection:", @"tableView:viewForFooterInSection:", @"tableView:heightForFooterInSection:"] containsObject:NSStringFromSelector(aSelector)])
         return YES;
     return [self.delegate respondsToSelector:aSelector];
 }
@@ -43,6 +44,24 @@
         return footer;
     }
     return nil;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if([self.delegate respondsToSelector:@selector(tableView:heightForHeaderInSection:)])
+        return [self.delegate tableView:tableView heightForHeaderInSection:section];
+    else if([tableView.dataSource respondsToSelector:@selector(tableView:titleForHeaderInSection:)])
+        return tableView.sectionHeaderHeight;
+    else return 0;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if([self.delegate respondsToSelector:@selector(tableView:heightForFooterInSection:)])
+        return [self.delegate tableView:tableView heightForFooterInSection:section];
+    else if([tableView.dataSource respondsToSelector:@selector(tableView:titleForFooterInSection:)])
+        return tableView.sectionFooterHeight;
+    else return 0;
 }
 
 @end
