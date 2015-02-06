@@ -16,6 +16,8 @@
 		D021563F1A7FEE72006B7F0E /* ScrollFromBottomTableView.framework in Resources */ = {isa = PBXBuildFile; fileRef = D09E12751A7EE37200EC5FD7 /* ScrollFromBottomTableView.framework */; };
 		D02156451A7FF2FB006B7F0E /* ScrollFromBottomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D02156431A7FF2FB006B7F0E /* ScrollFromBottomTableView.m */; };
 		D02156481A7FF41B006B7F0E /* ScrollFromBottomTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09E12751A7EE37200EC5FD7 /* ScrollFromBottomTableView.framework */; };
+		D04A49A71A8460AF00553BA7 /* ScrollFromBottomTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D04A49A51A8460AF00553BA7 /* ScrollFromBottomTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D04A49A81A8460AF00553BA7 /* ScrollFromBottomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D04A49A61A8460AF00553BA7 /* ScrollFromBottomTableViewController.m */; };
 		D08EE0621A8279310069C311 /* ForwardingUITableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0601A8279310069C311 /* ForwardingUITableViewDataSource.h */; };
 		D08EE0631A8279310069C311 /* ForwardingUITableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE0611A8279310069C311 /* ForwardingUITableViewDataSource.m */; };
 		D08EE0661A82843F0069C311 /* UIView+ScrollFromBottomTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0641A82843F0069C311 /* UIView+ScrollFromBottomTableView.h */; };
@@ -50,6 +52,8 @@
 		D02156261A7FEDDD006B7F0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D02156291A7FEDDD006B7F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D02156431A7FF2FB006B7F0E /* ScrollFromBottomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollFromBottomTableView.m; sourceTree = "<group>"; };
+		D04A49A51A8460AF00553BA7 /* ScrollFromBottomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollFromBottomTableViewController.h; sourceTree = "<group>"; };
+		D04A49A61A8460AF00553BA7 /* ScrollFromBottomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollFromBottomTableViewController.m; sourceTree = "<group>"; };
 		D08EE0601A8279310069C311 /* ForwardingUITableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardingUITableViewDataSource.h; sourceTree = "<group>"; };
 		D08EE0611A8279310069C311 /* ForwardingUITableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardingUITableViewDataSource.m; sourceTree = "<group>"; };
 		D08EE0641A82843F0069C311 /* UIView+ScrollFromBottomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScrollFromBottomTableView.h"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				D09E12781A7EE37200EC5FD7 /* Supporting Files */,
 				D09E127A1A7EE37200EC5FD7 /* ScrollFromBottomTableView.h */,
 				D02156431A7FF2FB006B7F0E /* ScrollFromBottomTableView.m */,
+				D04A49A51A8460AF00553BA7 /* ScrollFromBottomTableViewController.h */,
+				D04A49A61A8460AF00553BA7 /* ScrollFromBottomTableViewController.m */,
 				D08EE0601A8279310069C311 /* ForwardingUITableViewDataSource.h */,
 				D08EE0611A8279310069C311 /* ForwardingUITableViewDataSource.m */,
 				D08EE0641A82843F0069C311 /* UIView+ScrollFromBottomTableView.h */,
@@ -166,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D09E127B1A7EE37200EC5FD7 /* ScrollFromBottomTableView.h in Headers */,
+				D04A49A71A8460AF00553BA7 /* ScrollFromBottomTableViewController.h in Headers */,
 				D08EE0701A83CECB0069C311 /* ForwardingUITableViewDelegate.h in Headers */,
 				D08EE07A1A83E4AD0069C311 /* ScrollFromBottomTableViewDataSource.h in Headers */,
 				D08EE0621A8279310069C311 /* ForwardingUITableViewDataSource.h in Headers */,
@@ -288,6 +295,7 @@
 			files = (
 				D08EE0631A8279310069C311 /* ForwardingUITableViewDataSource.m in Sources */,
 				D02156451A7FF2FB006B7F0E /* ScrollFromBottomTableView.m in Sources */,
+				D04A49A81A8460AF00553BA7 /* ScrollFromBottomTableViewController.m in Sources */,
 				D08EE0791A83D3FE0069C311 /* ScrollFromBottomTableViewDataSource.m in Sources */,
 				D08EE0711A83CECB0069C311 /* ForwardingUITableViewDelegate.m in Sources */,
 				D08EE0671A82843F0069C311 /* UIView+ScrollFromBottomTableView.m in Sources */,
