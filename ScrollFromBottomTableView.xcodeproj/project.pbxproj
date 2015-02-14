@@ -24,10 +24,10 @@
 		D08EE0671A82843F0069C311 /* UIView+ScrollFromBottomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE0651A82843F0069C311 /* UIView+ScrollFromBottomTableView.m */; };
 		D08EE0701A83CECB0069C311 /* ForwardingUITableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE06E1A83CECB0069C311 /* ForwardingUITableViewDelegate.h */; };
 		D08EE0711A83CECB0069C311 /* ForwardingUITableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE06F1A83CECB0069C311 /* ForwardingUITableViewDelegate.m */; };
-		D08EE0741A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0721A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h */; };
+		D08EE0741A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0721A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08EE0751A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE0731A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.m */; };
 		D08EE0791A83D3FE0069C311 /* ScrollFromBottomTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE0771A83D3FE0069C311 /* ScrollFromBottomTableViewDataSource.m */; };
-		D08EE07A1A83E4AD0069C311 /* ScrollFromBottomTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0761A83D3FE0069C311 /* ScrollFromBottomTableViewDataSource.h */; };
+		D08EE07A1A83E4AD0069C311 /* ScrollFromBottomTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EE0761A83D3FE0069C311 /* ScrollFromBottomTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08EE0801A83E8170069C311 /* DemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EE07F1A83E8170069C311 /* DemoTableViewController.m */; };
 		D09E127B1A7EE37200EC5FD7 /* ScrollFromBottomTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = D09E127A1A7EE37200EC5FD7 /* ScrollFromBottomTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -173,11 +173,11 @@
 			files = (
 				D09E127B1A7EE37200EC5FD7 /* ScrollFromBottomTableView.h in Headers */,
 				D04A49A71A8460AF00553BA7 /* ScrollFromBottomTableViewController.h in Headers */,
-				D08EE0701A83CECB0069C311 /* ForwardingUITableViewDelegate.h in Headers */,
+				D08EE0741A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h in Headers */,
 				D08EE07A1A83E4AD0069C311 /* ScrollFromBottomTableViewDataSource.h in Headers */,
+				D08EE0701A83CECB0069C311 /* ForwardingUITableViewDelegate.h in Headers */,
 				D08EE0621A8279310069C311 /* ForwardingUITableViewDataSource.h in Headers */,
 				D08EE0661A82843F0069C311 /* UIView+ScrollFromBottomTableView.h in Headers */,
-				D08EE0741A83D22F0069C311 /* ScrollFromBottomTableViewDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
